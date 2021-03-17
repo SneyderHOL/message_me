@@ -45,7 +45,10 @@ Rails.application.configure do
   # config.action_cable.mount_path = nil
   # config.action_cable.url = 'wss://example.com/cable'
   # config.action_cable.allowed_request_origins = [ 'http://example.com', /http:\/\/example.*/ ]
-
+  # cable server's URI for production deployed to heroku example
+  # config.web_socket_server_url = "wss://action-cable-example.herokuapp.com/cable"
+  # accept WebSocket requests from specified origins
+  # config.action_cable.allowed_request_origins = ['https://action-cable-example.herokuapp.com', 'http://action-cable-example.herokuapp.com']
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # config.force_ssl = true
 
